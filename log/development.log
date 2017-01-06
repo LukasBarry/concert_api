@@ -1026,3 +1026,636 @@ MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.000682s
 Completed 200 OK in 3ms (Views: 0.8ms)
 
 
+Started GET "/events" for ::1 at 2017-01-06 17:51:54 -0500
+Processing by EventsController#index as HTML
+Completed 204 No Content in 20ms
+
+
+Started GET "/events" for ::1 at 2017-01-06 17:52:01 -0500
+Processing by EventsController#index as HTML
+Completed 204 No Content in 0ms
+
+
+Started GET "/events/new" for ::1 at 2017-01-06 17:52:46 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"new"}
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"_id"=>"new"}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.028137s
+Completed 404 Not Found in 143ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class Event with id(s) new.
+summary:
+  When calling Event.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): new ... (1 total) and the following ids were not found: new.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/controllers/events_controller.rb:67:in `set_event'
+Started GET "/events/new" for ::1 at 2017-01-06 17:53:41 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"new"}
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"_id"=>"new"}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.0010680000000000002s
+Completed 404 Not Found in 24ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class Event with id(s) new.
+summary:
+  When calling Event.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): new ... (1 total) and the following ids were not found: new.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/controllers/events_controller.rb:67:in `set_event'
+Started GET "/" for ::1 at 2017-01-06 17:53:50 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/LukasBarry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/LukasBarry/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (7.9ms)
+Completed 200 OK in 26ms (Views: 21.3ms)
+
+
+Started GET "/events" for ::1 at 2017-01-06 18:11:06 -0500
+Processing by EventsController#index as HTML
+Completed 204 No Content in 5ms
+
+
+Started GET "/events/2" for ::1 at 2017-01-06 18:12:57 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2"}
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"_id"=>"2"}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.0046830000000000005s
+Completed 404 Not Found in 36ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class Event with id(s) 2.
+summary:
+  When calling Event.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): 2 ... (1 total) and the following ids were not found: 2.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/controllers/events_controller.rb:67:in `set_event'
+Started GET "/events/3" for ::1 at 2017-01-06 18:13:00 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"_id"=>"3"}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.030314999999999998s
+Completed 204 No Content in 33ms
+
+
+Started GET "/events/3" for ::1 at 2017-01-06 18:13:04 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"_id"=>"3"}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.000914s
+Completed 204 No Content in 3ms
+
+
+Started GET "/events/3" for ::1 at 2017-01-06 18:13:04 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"3"}
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"_id"=>"3"}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.000993s
+Completed 204 No Content in 3ms
+
+
+Started GET "/events" for ::1 at 2017-01-06 18:23:59 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.047858s
+  Rendered events/index.html.erb within layouts/application (209.8ms)
+Completed 500 Internal Server Error in 264ms
+
+
+  
+ActionView::Template::Error (undefined method `edit_event_path' for #<#<Class:0x007fb459562b78>:0x007fb4595618b8>):
+    39:         <td><%= event.time %></td>
+    40:         <td><%= event.venue %></td>
+    41:         <td><%= link_to 'Show', event %></td>
+    42:         <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    43:         <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    44:       </tr>
+    45:     <% end %>
+  
+app/views/events/index.html.erb:42:in `block in _app_views_events_index_html_erb___2188271632508861184_70206284831440'
+app/views/events/index.html.erb:26:in `_app_views_events_index_html_erb___2188271632508861184_70206284831440'
+Started GET "/events" for ::1 at 2017-01-06 18:24:13 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.001435s
+  Rendered events/index.html.erb within layouts/application (114.6ms)
+Completed 500 Internal Server Error in 153ms
+
+
+  
+ActionView::Template::Error (undefined method `edit_event_path' for #<#<Class:0x007f85e06a5898>:0x007f85e0685688>):
+    39:         <td><%= event.time %></td>
+    40:         <td><%= event.venue %></td>
+    41:         <td><%= link_to 'Show', event %></td>
+    42:         <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    43:         <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    44:       </tr>
+    45:     <% end %>
+  
+app/views/events/index.html.erb:42:in `block in _app_views_events_index_html_erb___1064613327769058686_70106486223620'
+app/views/events/index.html.erb:26:in `_app_views_events_index_html_erb___1064613327769058686_70106486223620'
+Started GET "/events" for ::1 at 2017-01-06 18:48:14 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.024798999999999998s
+  Rendered events/index.html.erb within layouts/application (66.7ms)
+Completed 200 OK in 492ms (Views: 461.2ms)
+
+
+Started DELETE "/events/586a9841f00f4ed031056a6b" for ::1 at 2017-01-06 18:48:20 -0500
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NzAzencD770mpu3izOmDQuDXYfN9DXk+FpBsDUCoXDF3xpkU3y9WjGddaYT5uVOM6lSebOZU9dLlE3tLkUcEPQ==", "id"=>"586a9841f00f4ed031056a6b"}
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"_id"=>BSON::ObjectId('586a9841f00f4ed031056a6b')}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.028796000000000002s
+MONGODB | localhost:27017 | go_loco_development.delete | STARTED | {"delete"=>"events", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('586a9841f00f4ed031056a6b')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | go_loco_development.delete | SUCCEEDED | 0.022769s
+Redirected to http://localhost:3000/events
+Completed 302 Found in 58ms
+
+
+Started GET "/events" for ::1 at 2017-01-06 18:48:20 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.000858s
+  Rendered events/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 81ms (Views: 77.9ms)
+
+
+Started DELETE "/events/2.0" for ::1 at 2017-01-06 18:48:22 -0500
+Processing by EventsController#destroy as 
+  Parameters: {"authenticity_token"=>"ON2qnS7V5uZ7DR2b2FeFHMbkbqUMcbjJ1jAyQq10yzp4KwDzhvlf1zr2mf3tB1XSzGeROpcoNCUlsyUEfJuTNg==", "id"=>"2"}
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"_id"=>"2"}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.001271s
+Completed 404 Not Found in 27ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class Event with id(s) 2.
+summary:
+  When calling Event.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): 2 ... (1 total) and the following ids were not found: 2.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/controllers/events_controller.rb:67:in `set_event'
+Started GET "/events/2" for ::1 at 2017-01-06 18:48:28 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2"}
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"_id"=>"2"}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.000642s
+Completed 404 Not Found in 3ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class Event with id(s) 2.
+summary:
+  When calling Event.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): 2 ... (1 total) and the following ids were not found: 2.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/controllers/events_controller.rb:67:in `set_event'
+Started GET "/events" for ::1 at 2017-01-06 18:48:29 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.0006349999999999999s
+  Rendered events/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 54ms (Views: 51.5ms)
+
+
+Started DELETE "/events/3" for ::1 at 2017-01-06 18:48:33 -0500
+Processing by EventsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jOicudSKw7csSmj7x4BDSSIugwo4+RO8veLnNSi7zcDMHjbXfKZ6hm2x7J3y0JOHKK18laOgn1BOYfBz+VSVzA==", "id"=>"3"}
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"_id"=>"3"}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.0011s
+MONGODB | localhost:27017 | go_loco_development.delete | STARTED | {"delete"=>"events", "deletes"=>[{"q"=>{"_id"=>"3"}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | go_loco_development.delete | SUCCEEDED | 0.000689s
+Redirected to http://localhost:3000/events
+Completed 302 Found in 6ms
+
+
+Started GET "/events" for ::1 at 2017-01-06 18:48:33 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.002416s
+  Rendered events/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 43ms (Views: 40.8ms)
+
+
+Started GET "/events" for ::1 at 2017-01-06 18:48:35 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.00086s
+  Rendered events/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 43ms (Views: 40.3ms)
+
+
+Started DELETE "/events/4.0" for ::1 at 2017-01-06 18:48:38 -0500
+Processing by EventsController#destroy as 
+  Parameters: {"authenticity_token"=>"1KWdcKyzlSANunBSXPYZKPbItrxcvUhucaqL25KMlHyUUzceBJ8sEUxB9DRppsnm/EtJI8fkxIKCKZydQ2PMcA==", "id"=>"4"}
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"_id"=>"4"}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.0009019999999999999s
+Completed 404 Not Found in 5ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class Event with id(s) 4.
+summary:
+  When calling Event.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): 4 ... (1 total) and the following ids were not found: 4.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/controllers/events_controller.rb:67:in `set_event'
+Started GET "/events" for ::1 at 2017-01-06 18:48:43 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.0007390000000000001s
+  Rendered events/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 38ms (Views: 35.8ms)
+
+
+Started GET "/events/new" for ::1 at 2017-01-06 18:48:47 -0500
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (30.4ms)
+  Rendered events/new.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 81ms (Views: 73.6ms)
+
+
+Started GET "/events" for ::1 at 2017-01-06 18:48:49 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.001662s
+  Rendered events/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 62ms (Views: 56.5ms)
+
+
+Started GET "/events/new" for ::1 at 2017-01-06 18:48:51 -0500
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (12.3ms)
+  Rendered events/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 76ms (Views: 69.6ms)
+
+
+Started POST "/events" for ::1 at 2017-01-06 18:49:02 -0500
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EzQbUISwfe21Fuyf394fFnhpzBmx96NipOgBiNu2/2PIXch0pwtMEvoxRyRRZHoy3tyVp5Xv2Wii73alt5yjMw==", "event"=>{"name"=>"widespread", "ticket_url"=>"site.com", "location"=>"raleigh", "dates"=>"", "price"=>"", "info"=>"", "genre"=>"", "address"=>"", "city"=>"", "tags"=>"", "artist"=>"", "time"=>"", "venue"=>""}, "commit"=>"Create Event"}
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"name"=>"widespread"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.052727s
+MONGODB | localhost:27017 | go_loco_development.insert | STARTED | {"insert"=>"events", "documents"=>[{"_id"=>BSON::ObjectId('58702cefef0e3b710872d94c'), "name"=>"widespread", "ticket_url"=>"site.com", "location"=>"raleigh", "dates"=>"", "price"=>nil, "info"=>"", "genre"=>"", "address"=>"", "city"=>"", "tags"=>"", "a...
+MONGODB | localhost:27017 | go_loco_development.insert | SUCCEEDED | 0.0031750000000000003s
+Redirected to http://localhost:3000/events/58702cefef0e3b710872d94c
+Completed 302 Found in 82ms
+
+
+Started GET "/events/58702cefef0e3b710872d94c" for ::1 at 2017-01-06 18:49:03 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"58702cefef0e3b710872d94c"}
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"_id"=>BSON::ObjectId('58702cefef0e3b710872d94c')}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.0005960000000000001s
+Completed 406 Not Acceptable in 196ms
+
+
+  
+ActionController::UnknownFormat (EventsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not… nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.0.0.1) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+warden (1.2.6) lib/warden/manager.rb:34:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/events/" for ::1 at 2017-01-06 18:49:28 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.001013s
+  Rendered events/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 53ms (Views: 49.3ms)
+
+
+Started GET "/events/new" for ::1 at 2017-01-06 18:50:46 -0500
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (17.0ms)
+  Rendered events/new.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 112ms (Views: 86.9ms)
+
+
+Started POST "/events" for ::1 at 2017-01-06 18:50:54 -0500
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iSTzYmQY3ESQvuT+7ZikNkwUCIGgBmBExki6TFnA+MFSTSBGR6Ptu9+ZT0VjIsES6qFRP4QeGk7AT81hNeqkkQ==", "event"=>{"name"=>"yonder mountain", "ticket_url"=>"", "location"=>"", "dates"=>"", "price"=>"", "info"=>"", "genre"=>"", "address"=>"", "city"=>"", "tags"=>"", "artist"=>"", "time"=>"", "venue"=>""}, "commit"=>"Create Event"}
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"name"=>"yonder mountain"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.001549s
+MONGODB | localhost:27017 | go_loco_development.insert | STARTED | {"insert"=>"events", "documents"=>[{"_id"=>BSON::ObjectId('58702d5eef0e3b710872d94d'), "name"=>"yonder mountain", "ticket_url"=>"", "location"=>"", "dates"=>"", "price"=>nil, "info"=>"", "genre"=>"", "address"=>"", "city"=>"", "tags"=>"", "artist"=>""...
+MONGODB | localhost:27017 | go_loco_development.insert | SUCCEEDED | 0.0008079999999999999s
+Redirected to http://localhost:3000/events/58702d5eef0e3b710872d94d
+Completed 302 Found in 23ms
+
+
+Started GET "/events/58702d5eef0e3b710872d94d" for ::1 at 2017-01-06 18:50:54 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"58702d5eef0e3b710872d94d"}
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"_id"=>BSON::ObjectId('58702d5eef0e3b710872d94d')}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.001148s
+Completed 406 Not Acceptable in 195ms
+
+
+  
+ActionController::UnknownFormat (EventsController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not… nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.0.0.1) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.0.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+warden (1.2.6) lib/warden/manager.rb:34:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/events/58702d5eef0e3b710872d94d" for ::1 at 2017-01-06 18:52:58 -0500
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"58702d5eef0e3b710872d94d"}
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"_id"=>BSON::ObjectId('58702d5eef0e3b710872d94d')}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.001508s
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 193ms (Views: 78.3ms)
+
+
+Started GET "/events" for ::1 at 2017-01-06 18:53:02 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.001559s
+  Rendered events/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 57ms (Views: 52.9ms)
+
+
+Started GET "/events/new" for ::1 at 2017-01-06 18:53:23 -0500
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb
+  Rendered events/_form.html.erb (220.9ms)
+  Rendered events/new.html.erb (224.1ms)
+Completed 500 Internal Server Error in 241ms
+
+
+  
+ActionView::Template::Error (undefined method `protect_against_forgery?' for #<#<Class:0x007ffdc4cde460>:0x007ffdc4cdd0b0>):
+    1: <%= form_for(event) do |f| %>
+    2:   <% if event.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(event.errors.count, "error") %> prohibited this event from being saved:</h2>
+  
+app/views/events/_form.html.erb:1:in `_app_views_events__form_html_erb__2803398910507989780_70363952610460'
+app/views/events/new.html.erb:3:in `_app_views_events_new_html_erb___3162009905551588190_70363952642020'
+Started GET "/events" for ::1 at 2017-01-06 18:53:26 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb
+  Rendered events/index.html.erb (369.4ms)
+Completed 500 Internal Server Error in 376ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `notice' for #<#<Class:0x007ffdc4cde460>:0x007ffdc18d4ef8>):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <h1>Events</h1>
+    4: 
+  
+app/views/events/index.html.erb:1:in `_app_views_events_index_html_erb__362906004363331455_70363925359860'
+Started GET "/events" for ::1 at 2017-01-06 18:53:32 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.001053s
+  Rendered events/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 62ms (Views: 48.8ms)
+
+
+Started GET "/events" for ::1 at 2017-01-06 18:53:48 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.0011s
+  Rendered events/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 50ms (Views: 47.4ms)
+
+
+Started GET "/events/new" for ::1 at 2017-01-06 18:53:50 -0500
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (12.2ms)
+  Rendered events/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 75ms (Views: 71.5ms)
+
+
+Started GET "/events" for ::1 at 2017-01-06 18:54:21 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.001074s
+  Rendered events/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 98ms (Views: 70.0ms)
+
+
+Started GET "/events/new" for ::1 at 2017-01-06 18:54:23 -0500
+Processing by EventsController#new as HTML
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (12.3ms)
+  Rendered events/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 99ms (Views: 92.6ms)
+
+
+Started GET "/events" for ::1 at 2017-01-06 18:54:25 -0500
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.002472s
+  Rendered events/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 87ms (Views: 83.0ms)
+
+
