@@ -1,4 +1,4 @@
-class Api::V1::TicketsController < ApplicationController
+class Api::V1::TicketsController < ApiController
   respond_to :json
 
   def show

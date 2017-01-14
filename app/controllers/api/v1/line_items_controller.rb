@@ -1,4 +1,4 @@
-class Api::V1::LineItemsController < ApplicationController
+class Api::V1::LineItemsController < ApiController
   respond_to :json
 
   def show

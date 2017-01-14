@@ -1,4 +1,4 @@
-class Api::V1::CartsController < ApplicationController
+class Api::V1::CartsController < ApiController
   respond_to :json
 
   def show
