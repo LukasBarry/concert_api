@@ -33,8 +33,13 @@ class User
   # field :failed_attempts, type: Integer, default: 0 # Only if lock strategy is :failed_attempts
   # field :unlock_token,    type: String # Only if unlock strategy is :email or :both
   # field :locked_at,       type: Time
+  field :name,          type: String
+  field :mobile_number, type: Integer
 
   has_one :cart
 
-  validates :email, presence: true
+  validates :email, presence: true, format: { with: /\A.+@.+$\Z/ }, uniqueness: true
+  validates :name, presence: true
+  validates :country_code, presence: true
+  validates :mobile_number, presence: true
 end

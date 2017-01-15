@@ -21,6 +21,6 @@ class TicketsController < ApplicationController
   private
 
   def line_item_params
-    params.require(:line_item).permit(:cart_id, :ticket_id)
+    params.require(:line_item).permit(:cart_id, :price, :event_id)
   end
 end

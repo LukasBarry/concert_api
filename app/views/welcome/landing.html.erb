@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Let's All GoLoCo</title>
+    <link rel="icon"
+      type="image/png"
+      href="img/favicon.png">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- CSS
+        ================================================== -->
+    <!-- Bootstrap 3-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Template Styles -->
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  </head>
+  <body>
+
+	  <!-- NAVBAR
+	      ================================================== -->
+	  <nav class="navbar navbar-default" role="navigation">
+	  	  <div class="container">
+			  <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+
+			    <!--Replace text with your app name or logo image-->
+			    <a class="navbar-brand" href="#"><img id="logo" src="img/tinyglc3.png"></a>
+
+			  </div>
+			  <div class="collapse navbar-collapse navbar-ex1-collapse">
+			    <ul class="nav navbar-nav">
+			      <li><a onclick="$('header').animatescroll({padding:71});">Home</a></li>
+			      <li><a onclick="$('.detail').animatescroll({padding:71});">Demo</a></li>
+			      <li><a onclick="$('.features').animatescroll({padding:71});">Features</a></li>
+			    </ul>
+			  </div>
+		  </div>
+	  </nav>
+
+
+	   <!-- HEADER
+	   ================================================== -->
+<!-- HEADER
+       ================================================== -->
+      <header>
+         <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+           <source src="https://www.youtube.com/watch?v=gomdaxN9GB0" type="video/webm">
+           <source src="vid/Golocoshortcut-final.mp4" type="video/mp4">
+        </video>
+     </header>
+
+
+	  <!-- PURCHASE
+	      ================================================== -->
+	  <section class="purchase">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-md-offset-2 col-md-8">
+					 <h1>GoLoCo</h1>
+					 	    <p class="lead">Finally, a music app made for music culture.</p>
+
+				  </div>
+			  </div>
+		  </div>
+	  </section>
+
+
+	  <!-- PAYOFF
+	      ================================================== -->
+	  <section class="payoff">
+		<div class="container">
+			  <div class="row">
+				  <div class="col-md-12">
+					  <h1>GoLoCo, “Go (to) Local Concerts," makes it easier for you to find and go to shows with your friends</h1>
+				  </div>
+			  </div>
+		  </div>
+	  </section>
+
+
+	  <!-- DETAILS
+	      ================================================== -->
+	  <section class="detail">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="carousel-example-generic-2" class="carousel slide">
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+					    <div class="item active">
+					      	<div class="row">
+					      		<div class="col-sm-12 col-md-offset-1 col-md-6">
+					      			<h1>Curated Concerts</h1>
+					      			<p>Our algorithms give you your favorite shows daily.</p>
+					      		</div>
+					      		<div class="col-sm-12 col-md-5">
+					      			<div class="app-screenshot">
+					      				<img src="img/screenshots/glc-map.jpg" class="img-responsive" alt="App Screen 1">
+					      			</div>
+					      		</div>
+					      	</div>
+					    </div>
+					    <div class="item">
+					    	<div class="row">
+					    		<div class="col-sm-12 col-md-offset-1 col-md-6">
+					    			<h1>Come Together</h1>
+					    			<p>No need to find the word, it's all right here.</p>
+					    		</div>
+					    		<div class="col-sm-12 col-md-5">
+					    			<div class="app-screenshot">
+					    				<img src="img/glcfeed.jpg" class="img-responsive" alt="App Screen 2">
+					    			</div>
+					    		</div>
+					    	</div>
+						</div>
+					    <div class="item">
+					      <div class="row">
+					      	<div class="col-sm-12 col-md-offset-1 col-md-6">
+					      		<h1>Centralized Culture </h1>
+					      		<p>Concerts, tickets, and social media all together on one platform.</p>
+					      	</div>
+					      	<div class="col-sm-12 col-md-5">
+					      		<div class="app-screenshot">
+					      			<img src="img/glccalendar.jpg" class="img-responsive" alt="App Screen 3">
+					      		</div>
+					      	</div>
+					      </div>
+					    </div>
+					  </div>
+
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
+					  </ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	  <!-- FEATURES
+	      ================================================== -->
+	  <section class="features">
+		  <div class="container">
+			  <div class="row">
+
+				  <div class="col-md-4">
+					  <div class="circle"><i class="fa fa-music" aria-hidden="true"></i></div>
+					  <h2>Your Concerts</h2>
+					  <p>GoLoCo curates the concerts you want to see everyday based off your favorite genre and geolocation.</p>
+				  </div>
+
+				  <div class="col-md-4">
+					  <div class="circle"><i class="fa fa-users" aria-hidden="true"></i></div>
+					  <h2>Your Culture</h2>
+					  <p>On the feed, interact with others in your local scene and build your city's culture.</p>
+				  </div>
+
+				  <div class="col-md-4">
+					  <div class="circle"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+					  <h2>Your City</h2>
+					  <p>Not only do you get your custom shows, but the entire city event calendar, too.</p>
+				  </div>
+
+			  </div>
+		  </div>
+	  </section>
+
+
+
+
+
+	 <!-- GET IT
+	     ================================================== -->
+	  <section class="get-it">
+	  	<div class="container">
+	  		<div class="row">
+	  			<div class="col-md-12">
+	  				<h1>Now on the App Store</h1>
+	  				<p class="lead">Only in Los Angeles</p>
+	  				<button type="button" class="app-store"></button>
+	  			</div>
+	  			<div class="col-md-12">
+	  				<hr />
+		  			<ul>
+	                	<li><a href="mailto:ford@golocoapp.com">Contact</a></li>
+	                	<li><a href="https://twitter.com/GoLoCo_App">Support</a></li>
+                	</ul>
+	  			</div>
+	  		</div>
+	  	</div>
+	  </section>
+
+
+	 <!-- JAVASCRIPT
+	     ================================================== -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/animatescroll.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/retina.min.js"></script>
+
+</html>

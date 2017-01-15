@@ -1,7 +1,8 @@
 class Ticket
   include Mongoid::Document
-  field :price, type: Integer
+  field :price,    type: Integer
   field :event_id, type: Integer
+  field :cart_id,  type: Integer
 
   before_destroy :ensure_not_referenced_by_any_line_item
 

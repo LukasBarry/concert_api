@@ -14,6 +14,7 @@ gem 'devise'
 gem 'stripe'
 gem 'figaro'
 gem 'active_model_serializers'
+gem "twilio-ruby"
 
 group :development, :test do
   gem 'byebug', platform: :mri
