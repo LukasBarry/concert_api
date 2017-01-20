@@ -2,7 +2,7 @@ require 'api_constraints'
 
 Rails.application.routes.draw do
   root 'welcome#landing'
-  devise_for :users
+  resources :users, only: [:new, :create, :show]
   resources :events
   resources :posts
   resources :carts
