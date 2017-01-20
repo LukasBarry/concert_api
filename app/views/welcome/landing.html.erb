@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Let's All GoLoCo</title>
-    <link rel="icon"
-      type="image/png"
-      href="img/favicon.png">
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- CSS
-        ================================================== -->
-    <!-- Bootstrap 3-->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
-    <!-- Template Styles -->
-    <link href="css/style.css" rel="stylesheet" media="screen">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-  </head>
-  <body>
-
-	  <!-- NAVBAR
+<!-- NAVBAR
 	      ================================================== -->
 	  <nav class="navbar navbar-default" role="navigation">
 	  	  <div class="container">
@@ -33,7 +11,7 @@
 			    </button>
 
 			    <!--Replace text with your app name or logo image-->
-			    <a class="navbar-brand" href="#"><img id="logo" src="img/tinyglc3.png"></a>
+          <%= image_tag 'tinyglc3.png' %>
 
 			  </div>
 			  <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -105,7 +83,7 @@
 					      		</div>
 					      		<div class="col-sm-12 col-md-5">
 					      			<div class="app-screenshot">
-					      				<img src="img/screenshots/glc-map.jpg" class="img-responsive" alt="App Screen 1">
+                        <%= image_tag 'screenshots/glc-map.jpg', class: 'img-responsive' %>
 					      			</div>
 					      		</div>
 					      	</div>
@@ -117,9 +95,7 @@
 					    			<p>No need to find the word, it's all right here.</p>
 					    		</div>
 					    		<div class="col-sm-12 col-md-5">
-					    			<div class="app-screenshot">
-					    				<img src="img/glcfeed.jpg" class="img-responsive" alt="App Screen 2">
-					    			</div>
+                    <%= image_tag 'glcfeed.jpg', class: 'img-responsive' %>
 					    		</div>
 					    	</div>
 						</div>
@@ -130,9 +106,7 @@
 					      		<p>Concerts, tickets, and social media all together on one platform.</p>
 					      	</div>
 					      	<div class="col-sm-12 col-md-5">
-					      		<div class="app-screenshot">
-					      			<img src="img/glccalendar.jpg" class="img-responsive" alt="App Screen 3">
-					      		</div>
+                    <%= image_tag 'glccalendar.jpg', class: 'img-responsive' %>
 					      	</div>
 					      </div>
 					    </div>
@@ -212,5 +186,3 @@
     <script src="js/animatescroll.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/retina.min.js"></script>
-
-</html>

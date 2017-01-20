@@ -35,6 +35,7 @@ class User
   # field :locked_at,       type: Time
   field :name,          type: String
   field :mobile_number, type: Integer
+  field :country_code,  type: Integer
 
   has_one :cart
 
