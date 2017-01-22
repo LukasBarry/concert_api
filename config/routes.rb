@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
       resources :users, only: [:show]
-      resources :events, only: [:show]
+      resources :events, only: [:show, :index]
       resources :carts, only: [:show]
       resources :posts, only: [:show]
       resources :tickets, only: [:show]

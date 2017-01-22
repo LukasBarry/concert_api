@@ -13,6 +13,7 @@ class Event
   field :artist,     type: String
   field :time,       type: String
   field :venue,      type: String
+  field :featured,   type: Boolean
 
   has_many :tickets
 
