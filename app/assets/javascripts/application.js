@@ -13,6 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require animatescroll
+//= require bootstrap.min
+//= require cable
+//= require retina.min
+//= require scripts
 //= require_tree .
 
 /*

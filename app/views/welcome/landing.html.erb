@@ -11,7 +11,7 @@
 			    </button>
 
 			    <!--Replace text with your app name or logo image-->
-          <%= image_tag 'tinyglc3.png' %>
+			    <%= link_to image_tag('tinyglc3.png'), href="/" %>
 
 			  </div>
 			  <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -32,7 +32,7 @@
       <header>
          <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
            <source src="https://www.youtube.com/watch?v=gomdaxN9GB0" type="video/webm">
-           <source src="vid/Golocoshortcut-final.mp4" type="video/mp4">
+           <source src="video/Golocoshortcut-final.mp4" type="video/mp4">
         </video>
      </header>
 
@@ -71,7 +71,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div id="carousel-example-generic-2" class="carousel slide">
+					<div id="carousel-example-generic-2" class="carousel slide" data-ride="carousel">
 
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner">
@@ -95,7 +95,9 @@
 					    			<p>No need to find the word, it's all right here.</p>
 					    		</div>
 					    		<div class="col-sm-12 col-md-5">
+					    			<div class="app-screenshot">
                     <%= image_tag 'glcfeed.jpg', class: 'img-responsive' %>
+					    			</div>
 					    		</div>
 					    	</div>
 						</div>
@@ -106,7 +108,9 @@
 					      		<p>Concerts, tickets, and social media all together on one platform.</p>
 					      	</div>
 					      	<div class="col-sm-12 col-md-5">
+					      		<div class="app-screenshot">
                     <%= image_tag 'glccalendar.jpg', class: 'img-responsive' %>
+                    			</div>
 					      	</div>
 					      </div>
 					    </div>

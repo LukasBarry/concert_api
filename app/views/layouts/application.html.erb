@@ -14,11 +14,23 @@
     <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'animatescroll' %>
+    <%= javascript_include_tag 'bootstrap.min' %>
+    <%= javascript_include_tag 'cable' %>
+    <%= javascript_include_tag 'jquery' %>
+    <%= javascript_include_tag 'retina.min' %>
+    <%= javascript_include_tag 'scripts' %>
     <%= javascript_include_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" %>
     <%= csrf_meta_tags %>
+    
   </head>
 
   <body>
     <%= yield %>
   </body>
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/animatescroll.js"></script>
+    <script src="/javascripts/scripts.js"></script>
+    <script src="/javascripts/retina.min.js"></script>
 </html>
