@@ -45,7 +45,7 @@ class UsersController < ApplicationController
       @user.update(verified: true)
 
       # Send an SMS to the user 'success'
-      send_message("You did it! Signup complete :)")
+      send_message("You did it! Signup complete!")
 
       # Show the user profile
       redirect_to user_path(@user.id)
@@ -77,7 +77,8 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(
-      :email, :password, :name, :country_code, :phone_number, :authy_id, :verified
+      :email, :password, :name, :country_code, :phone_number, :authy_id,
+      :verified
     )
   end
 end

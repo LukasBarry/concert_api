@@ -11,5 +11,10 @@
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 
 stripe_test_publishable_key: pk_test_Dgxbbdw0fOowLj8Q0iHyul16
-
 stripe_test_secret_key: sk_test_qWCWFTA04XVzw7q0mXMoQuDA
+
+authy_api_key: 22ajzDOlaOZ8yMUUIBQMGDaJ464n1wqC
+
+twilio_number: 1-919-888-4416
+twilio_account_sid: ACa5d0676f8361f1a6dce3c1bc65830340
+twilio_auth_token: 4451122095671de398b42d50797249ed

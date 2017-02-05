@@ -8,6 +8,9 @@ class Api::V1::UsersController < ApiController
   private
 
   def user_params
-    params.require(:user).permit(:email, :name, :mobile_number)
+    params.require(:user).permit(
+      :email, :password, :name, :country_code, :phone_number, :authy_id,
+      :verified
+    )
   end
 end
