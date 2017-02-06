@@ -62914,3 +62914,134 @@ puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
 puma (3.6.2) lib/puma/server.rb:415:in `process_client'
 puma (3.6.2) lib/puma/server.rb:275:in `block in run'
 puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/users/589757e4ef0e3b3522f6549b" for ::1 at 2017-02-06 09:28:41 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"589757e4ef0e3b3522f6549b"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 44ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1><%= @user.name %></h1>
+    2: <p>Account Status: <% if @user.verified? %>Verified<% else -%>Not Verified<% end -%>
+    3: <% if !@user.verified? %>
+    4: <p>
+  
+app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb__3258979062609930181_70250556267520'
+Started GET "/api/users/589757e4ef0e3b3522f6549b" for ::1 at 2017-02-06 09:28:57 -0500
+  
+ActionController::RoutingError (undefined method `respond_to' for Api::V1::UsersController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/api/v1/users_controller.rb:2:in `<class:UsersController>'
+app/controllers/api/v1/users_controller.rb:1:in `<top (required)>'
+Started GET "/api/users/589757e4ef0e3b3522f6549b" for ::1 at 2017-02-06 09:30:15 -0500
+  
+ActionController::RoutingError (undefined method `respond_to' for Api::V1::UsersController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/api/v1/users_controller.rb:2:in `<class:UsersController>'
+app/controllers/api/v1/users_controller.rb:1:in `<top (required)>'
+Started GET "/api/events/58702cefef0e3b710872d94c" for ::1 at 2017-02-06 09:31:00 -0500
+  
+ActionController::RoutingError (undefined method `respond_to' for Api::V1::EventsController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/api/v1/events_controller.rb:2:in `<class:EventsController>'
+app/controllers/api/v1/events_controller.rb:1:in `<top (required)>'
+Started GET "/api/v1/events/58702cefef0e3b710872d94c" for ::1 at 2017-02-06 09:31:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/events/58702cefef0e3b710872d94c"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+Started GET "/api/events/58702cefef0e3b710872d94c" for ::1 at 2017-02-06 09:31:36 -0500
+  
+ActionController::RoutingError (undefined method `respond_to' for Api::V1::EventsController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/api/v1/events_controller.rb:2:in `<class:EventsController>'
+app/controllers/api/v1/events_controller.rb:1:in `<top (required)>'
+Started GET "/api/events/58702cefef0e3b710872d94c" for ::1 at 2017-02-06 09:31:53 -0500
+Processing by Api::V1::EventsController#show as JSON
+  Parameters: {"id"=>"58702cefef0e3b710872d94c"}
+Overwriting existing field artist in class Event.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"_id"=>BSON::ObjectId('58702cefef0e3b710872d94c')}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.024738s
+Completed 500 Internal Server Error in 128ms
+
+
+  
+NoMethodError (undefined method `respond_with' for #<Api::V1::EventsController:0x007fc8f78c15f0>
+Did you mean?  respond_to?):
+  
+app/controllers/api/v1/events_controller.rb:5:in `show'
+Started GET "/api/events/58702cefef0e3b710872d94c" for ::1 at 2017-02-06 09:32:05 -0500
+  
+ActionController::RoutingError (undefined method `respond_to' for Api::V1::EventsController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/api/v1/events_controller.rb:2:in `<class:EventsController>'
+app/controllers/api/v1/events_controller.rb:1:in `<top (required)>'
+Started GET "/api/events/58702cefef0e3b710872d94c" for ::1 at 2017-02-06 09:33:37 -0500
+  
+ActionController::RoutingError (undefined method `respond_to' for Api::V1::EventsController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/api/v1/events_controller.rb:2:in `<class:EventsController>'
+app/controllers/api/v1/events_controller.rb:1:in `<top (required)>'
+Started GET "/api/events/58702cefef0e3b710872d94c" for ::1 at 2017-02-06 09:35:02 -0500
+Processing by Api::V1::EventsController#show as JSON
+  Parameters: {"id"=>"58702cefef0e3b710872d94c"}
+Overwriting existing field artist in class Event.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"events", "filter"=>{"_id"=>BSON::ObjectId('58702cefef0e3b710872d94c')}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.0013180000000000002s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Event (1.41ms)
+Completed 200 OK in 73ms (Views: 15.2ms)
+
+
+Started GET "/api/users/589757e4ef0e3b3522f6549b" for ::1 at 2017-02-06 09:35:17 -0500
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"589757e4ef0e3b3522f6549b"}
+MONGODB | localhost:27017 | go_loco_development.find | STARTED | {"find"=>"users", "filter"=>{"_id"=>BSON::ObjectId('589757e4ef0e3b3522f6549b')}}
+MONGODB | localhost:27017 | go_loco_development.find | SUCCEEDED | 0.000734s
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.42ms)
+Completed 200 OK in 24ms (Views: 6.1ms)
+
+
