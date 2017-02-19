@@ -10,7 +10,6 @@ class Api::V1::UsersController < ApiController
     if user.save
       # Save the user_id to the session object
       session[:user_id] = user.id
-
       # Create user on Authy, will return an id on the object
       authy = Authy::API.register_user(
         email: user.email,
@@ -18,10 +17,8 @@ class Api::V1::UsersController < ApiController
         country_code: user.country_code
       )
       user.update(authy_id: authy.id)
-
       # Send an SMS to your user
       Authy::API.request_sms(id: user.authy_id)
-
       redirect_to api_verify_path
     else
       render json: { errors: user.errors }, status: 422
@@ -34,17 +31,13 @@ class Api::V1::UsersController < ApiController
 
   def verify
     user = User.find(params[:id])
-
     # Use Authy to send the verification token
     token = Authy::API.verify(id: user.authy_id, token: params[:token])
-
     if token.ok?
       # Mark the user as verified for get /user/:id
       user.update(verified: true)
-
       # Send an SMS to the user 'success'
       send_message("You did it! Signup complete!")
-
       # Show the user profile
       redirect_to api_user_path(user.id)
     else
@@ -75,8 +68,7 @@ class Api::V1::UsersController < ApiController
 
   def user_params
     params.require(:user).permit(
-      :email, :password, :name, :country_code, :phone_number, :authy_id,
-      :verified
+      :email, :password, :name, :country_code, :phone_number, :authy_id, :verified
     )
   end
 end

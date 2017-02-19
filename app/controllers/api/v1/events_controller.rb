@@ -6,15 +6,15 @@ class Api::V1::EventsController < ApiController
   end
 
   def index
-    respond_with Event.all
+    events = Event.all
+    render json: events
   end
 
   private
 
   def event_params
     params.require(:event).permit(
-      :name, :url, :location, :dates, :price, :info, :genre, :address, :city,
-      :tags
+      :artist, :ticket_url, :dates, :price, :genre, :address, :time, :venue, :featured
     )
   end
 end
