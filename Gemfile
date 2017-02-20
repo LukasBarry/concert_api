@@ -16,6 +16,7 @@ gem 'active_model_serializers'
 gem 'authy'
 gem 'twilio-ruby', '~> 5.0.0.rc17'
 gem 'responders'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug', platform: :mri

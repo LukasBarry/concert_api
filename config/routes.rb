@@ -1,6 +1,7 @@
 require 'api_constraints'
 
 Rails.application.routes.draw do
+  devise_for :users
   root 'welcome#landing'
 
   resources :users, only: [:new, :create, :show]
