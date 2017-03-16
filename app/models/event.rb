@@ -12,5 +12,5 @@ class Event
 
   has_many :tickets
 
-  validates :name, presence: true, uniqueness: true
+  validates :artist, presence: true, uniqueness: true
 end

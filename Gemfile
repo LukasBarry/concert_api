@@ -17,6 +17,7 @@ gem 'authy'
 gem 'twilio-ruby', '~> 5.0.0.rc17'
 gem 'responders'
 gem 'devise'
+gem 'rb-readline'
 
 group :development, :test do
   gem 'byebug', platform: :mri
